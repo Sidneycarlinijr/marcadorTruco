@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+#center-box{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 1100px;
+    height: 630px!important;
+    
+}
