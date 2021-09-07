@@ -15,5 +15,18 @@
     border-radius: 10px;
     max-width: 1100px;
     height: 630px!important;
-    
+}
+
+#player1, #player2{
+    border-radius: 10px;
+    background-position: center;
+    background-size: 500px;
+    background-repeat: repeat;
+    overflow: hidden;
+}
+#player1{
+    background-image: url(../images/1.png);
+}
+#player2{
+    background-image: url(../images/baralho-espanhol-nipes-invertido.jpg);
 }
