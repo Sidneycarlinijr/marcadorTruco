@@ -2,6 +2,18 @@
     box-sizing: border-box;
 }
 
+body{
+    /* background-image: url(); */
+    /* background-size: 400px; */
+    
+}
+
+textarea{
+    background-color: transparent!important;
+    border: none!important;
+    resize: none;
+}
+
 #center-box{
     position: absolute;
     left: 0;
@@ -10,8 +22,6 @@
     bottom: 0;
     margin: auto;
     
-    border: 1px solid grey;
-    background-color: white;
     border-radius: 10px;
     max-width: 1100px;
     height: 630px!important;
@@ -25,8 +35,16 @@
     overflow: hidden;
 }
 #player1{
-    background-image: url(../images/1.png);
+    /* background-image: url(); */
 }
 #player2{
-    background-image: url(../images/baralho-espanhol-nipes-invertido.jpg);
+    /* background-image: url(); */
+}
+
+.teamName{
+    font-size: 30px!important;
+}
+
+.teamPoints h1{
+    font-size: 150px!important;
 }
