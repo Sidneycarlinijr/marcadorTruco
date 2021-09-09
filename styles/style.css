@@ -30,8 +30,8 @@ textarea{
 #player1, #player2{
     border-radius: 10px;
     background-position: center;
-    background-size: 500px;
-    background-repeat: repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 #player1{
@@ -47,4 +47,24 @@ textarea{
 
 .teamPoints h1{
     font-size: 150px!important;
+}
+
+#trucoButton{
+    max-width: 500px;
+    height: 100px;
+    
+    background-color: red;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto 50px auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#trucoButtonText{
+    font-size: 50px!important;
 }
