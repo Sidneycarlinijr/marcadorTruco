@@ -31,14 +31,14 @@ textarea{
     border-radius: 10px;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     overflow: hidden;
 }
 #player1{
-    /* background-image: url(); */
+    /* background-image: url(../images/baralho-espanhol-nipes.jpg); */
 }
 #player2{
-    /* background-image: url(); */
+    /* background-image: url(../images/baralho-espanhol-nipes-invertido.jpg); */
 }
 
 .teamName{
@@ -67,4 +67,12 @@ textarea{
 
 #trucoButtonText{
     font-size: 50px!important;
+}
+
+.buttons div{
+    height: 100px;
+}
+
+.plusLessButton{
+    width: 75px;
 }
