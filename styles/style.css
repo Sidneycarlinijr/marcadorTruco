@@ -65,6 +65,10 @@ textarea{
     cursor: pointer;
 }
 
+.pointer{
+    cursor: pointer!important;
+}
+
 #trucoButtonText{
     font-size: 50px!important;
 }
