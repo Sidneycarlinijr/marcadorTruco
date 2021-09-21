@@ -3,8 +3,10 @@
 }
 
 body{
-    /* background-image: url(); */
-    /* background-size: 400px; */
+    background-image: url(../images/ducks.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     
 }
 
@@ -53,8 +55,6 @@ textarea{
     max-width: 500px;
     height: 100px;
     
-    background-color: red;
-
     position: absolute;
     top: 0;
     bottom: 0;
@@ -76,3 +76,25 @@ textarea{
 .plusLessButton{
     width: 75px;
 }
+
+/* Colors */
+
+.red-bg{
+    background-color: #eb2225!important;
+}
+
+.white{
+    color: #bbc4c8!important;
+}
+.white-bg{
+    background-color: #bbc4c8!important;
+}
+
+.d-red{
+    color: #790b0c!important;
+}
+
+.teste{
+    color: red;
+}
+
