@@ -1,22 +1,25 @@
-
-
-// function add(){
-//     var team1Points = document.querySelector("#team1Points");
-
-//     team1Points.value = team1Points.textContent++
-
-
-function add(a){
-
-    dad = a.parentNode;
+function getTarget(target){
+    //Escala os niveis de hierarquia
+    //se posicionando no elemento a ser alterado
+    dad = target.parentNode;
     grandpa = dad.parentNode;
     sibling = grandpa.parentNode;
     targetElement = sibling.previousElementSibling;
     h1Target = targetElement.children;
 
-    h1Target[0].value = h1Target[0].textContent++
-
-console.log(h1Target[0].textContent);
-
+    return h1Target[0];
 }
 
+function add(element){
+
+    target = getTarget(element);
+    
+    target.value = target.textContent++
+}
+
+function remove(element){
+
+    target = getTarget(element);
+
+    target.value = target.textContent--;
+}
