@@ -17,17 +17,14 @@ function truco(){
             trucoBox.innerHTML = "12 PRA ACABAR LOGO!";
             break;
 
+        case 4:
+            trucoBox.innerHTML = "É truco papudo!"
+            break;
+
         default:
             trucoBox.innerHTML = "É truco papudo!"
-            clicks = 0;
             break;
     }
-    
-
-
-
-    console.log(trucoBox,clicks);
-
 
 }
 
@@ -46,8 +43,29 @@ function getTarget(target){
 function add(element){
 
     target = getTarget(element);
-    
-    target.value = target.textContent++
+
+    switch(clicks){
+        case 1:
+            target.innerHTML = parseInt(target.innerHTML) + 3;
+            break;
+
+        case 2:
+            target.innerHTML = parseInt(target.innerHTML) + 6;
+            break;
+
+        case 3:
+            target.innerHTML = parseInt(target.innerHTML) + 9;
+            break;
+
+        case 4:
+            target.innerHTML = 12;
+            clicks = 0;
+            break;
+
+        default:
+            target.innerHTML++;
+            break;
+    }
 }
 
 function remove(element){
