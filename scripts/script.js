@@ -23,9 +23,11 @@ function truco(){
 
         default:
             trucoBox.innerHTML = "É truco papudo!"
+            clicks=0;
             break;
     }
 
+        console.log(clicks);
 }
 
 function getTarget(target){
@@ -47,19 +49,26 @@ function add(element){
     switch(clicks){
         case 1:
             target.innerHTML = parseInt(target.innerHTML) + 3;
+            clicks=4; //retorno o botao truco para a posicao inicial
+            truco()
             break;
 
         case 2:
             target.innerHTML = parseInt(target.innerHTML) + 6;
+            clicks=4;
+            truco();
             break;
 
         case 3:
             target.innerHTML = parseInt(target.innerHTML) + 9;
+            clicks=4;
+            truco();
             break;
 
         case 4:
             target.innerHTML = 12;
-            clicks = 0;
+            clicks = 4;
+            truco()
             break;
 
         default:
