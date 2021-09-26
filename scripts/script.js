@@ -1,5 +1,17 @@
 var clicks = 0;
 
+function getTarget(target){
+    //Escala os niveis de hierarquia
+    //se posicionando no elemento a ser alterado
+    dad = target.parentNode;
+    grandpa = dad.parentNode;
+    sibling = grandpa.parentNode;
+    targetElement = sibling.previousElementSibling;
+    h1Target = targetElement.children;
+
+    return h1Target[0];
+}
+
 function truco(){
     let trucoBox = document.getElementById("trucoButtonText");
 
@@ -26,42 +38,28 @@ function truco(){
             clicks=0;
             break;
     }
-
-        console.log(clicks);
-}
-
-function getTarget(target){
-    //Escala os niveis de hierarquia
-    //se posicionando no elemento a ser alterado
-    dad = target.parentNode;
-    grandpa = dad.parentNode;
-    sibling = grandpa.parentNode;
-    targetElement = sibling.previousElementSibling;
-    h1Target = targetElement.children;
-
-    return h1Target[0];
 }
 
 function add(element){
 
-    target = getTarget(element);
+    var target = getTarget(element);
 
     switch(clicks){
         case 1:
             target.innerHTML = parseInt(target.innerHTML) + 3;
-            clicks=4; //retorno o botao truco para a posicao inicial
+            clicks= 4; //retorno o botao truco para a posicao inicial
             truco()
             break;
 
         case 2:
             target.innerHTML = parseInt(target.innerHTML) + 6;
-            clicks=4;
+            clicks= 4;
             truco();
             break;
 
         case 3:
             target.innerHTML = parseInt(target.innerHTML) + 9;
-            clicks=4;
+            clicks= 4;
             truco();
             break;
 
@@ -75,6 +73,10 @@ function add(element){
             target.innerHTML++;
             break;
     }
+
+    if(target.innerHTML > 11){
+        resetGame();
+    }
 }
 
 function remove(element){
@@ -86,6 +88,6 @@ function remove(element){
     }
 }
 
-
-//validar se < 0 
-//validar se =11
+function resetGame(){
+    console.log("reseta!")
+}
