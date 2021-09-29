@@ -24,7 +24,6 @@ textarea{
     bottom: 0;
     margin: auto;
     
-    border-radius: 10px;
     max-width: 1100px;
     height: 630px!important;
 }
@@ -77,8 +76,12 @@ textarea{
     height: 100px;
 }
 
+.plusAndLessDiv{
+    width: 100px!important;
+}
+
 .plusLessButton{
-    width: 75px;
+    width: 100%!important;
 }
 
 /* Colors */
@@ -96,4 +99,17 @@ textarea{
 
 .d-red{
     color: #790b0c!important;
+}
+
+/* media queries */
+@media(max-width: 770px){
+    #player1, #player2{
+        border-radius: 0px!important;
+    }
+}
+
+@media(max-width: 400px){
+    .plusLessButton{
+        width:50px;
+    }
 }
