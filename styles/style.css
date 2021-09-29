@@ -110,12 +110,6 @@ textarea{
 
 @media(max-width: 600px){
     .plusAndLessDiv{
-        width:55px!important;
-    }
-}
-
-@media(max-width: 420px){
-    .plusAndLessDiv{
-        width:45px!important;
+        width: 100%!important;
     }
 }
