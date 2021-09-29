@@ -108,8 +108,14 @@ textarea{
     }
 }
 
-@media(max-width: 400px){
-    .plusLessButton{
-        width:50px;
+@media(max-width: 600px){
+    .plusAndLessDiv{
+        width:55px!important;
+    }
+}
+
+@media(max-width: 420px){
+    .plusAndLessDiv{
+        width:45px!important;
     }
 }
