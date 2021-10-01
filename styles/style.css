@@ -7,6 +7,8 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+
+    font-family: 'Sora', sans-serif;
     
 }
 
@@ -15,6 +17,11 @@ textarea{
     border: none!important;
     resize: none;
 }
+
+@font-face {
+    font-family: Delight;
+    src: local(Delight Candles), url(../styles/Delight\ Candles\ .ttf);
+ }
 
 #center-box{
     position: absolute;
@@ -78,6 +85,11 @@ textarea{
 
 .plusAndLessDiv{
     width: 100px!important;
+}
+
+.plusAndLessDiv h1{
+    font-size: 90px;
+    display: none;
 }
 
 .plusLessButton{

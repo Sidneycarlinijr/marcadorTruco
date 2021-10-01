@@ -19,25 +19,37 @@ function truco(){
     switch(clicks){
         case 1:
             trucoBox.innerHTML = "É 6 CUZAO!";
+            pointsQuantity = "+3"
+            switchTrucoPoints(pointsQuantity)
             break;
         
         case 2:
             trucoBox.innerHTML = "9 ENTAO!";
+            pointsQuantity = "+6"
+            switchTrucoPoints(pointsQuantity)
             break;
         
         case 3:
             trucoBox.innerHTML = "12 PRA ACABAR LOGO!";
+            pointsQuantity = "+9"
+            switchTrucoPoints(pointsQuantity)
             break;
 
         case 4:
             trucoBox.innerHTML = "É truco papudo!"
+            pointsQuantity = "+12"
+            switchTrucoPoints(pointsQuantity)
             break;
 
         default:
             trucoBox.innerHTML = "É truco papudo!"
+            pointsQuantity = "reset";
+            switchTrucoPoints(pointsQuantity)
             clicks=0;
             break;
     }
+
+    console.log(buttons)
 }
 
 function add(element){
@@ -64,7 +76,7 @@ function add(element){
             break;
 
         case 4:
-            target.innerHTML = 12;
+            target.innerHTML = parseInt(target.innerHTML) + 12;
             clicks = 4;
             truco()
             break;
@@ -90,4 +102,27 @@ function remove(element){
 
 function resetGame(){
     console.log("reseta!")
+}
+
+function switchTrucoPoints(pointsQuantity){
+    let trucoPoints = document.getElementsByClassName("trucoPoints");
+    let buttons = document.getElementsByClassName("plusButton");
+    
+    if(pointsQuantity != "reset"){
+        for(points of trucoPoints){
+            points.style.display = "block";
+            points.innerHTML = pointsQuantity;
+        }
+        for(button of buttons){
+            button.style.display = "none";
+        }
+    }else{
+        for(points of trucoPoints){
+            points.style.display = "none";
+            points.innerHTML = pointsQuantity;
+        }
+        for(button of buttons){
+            button.style.display = "block";
+        }
+    }
 }
