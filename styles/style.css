@@ -23,6 +23,9 @@ textarea{
     src: local(Delight Candles), url(../styles/Delight\ Candles\ .ttf);
  }
 
+div .col{
+    padding: 0;
+}
 #center-box{
     position: absolute;
     left: 0;
@@ -94,6 +97,31 @@ textarea{
 
 .plusLessButton{
     width: 100%!important;
+}
+
+#gameOver{
+    display: flex;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 50px;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#gameOverBox button, h2{
+    font-size: 3vw;
+}
+
+#gameOverPointsBox{
+    max-width: 600px;
+}
+
+#gameOverPointsBox p{
+    font-size: 2vw;
 }
 
 /* Colors */
