@@ -113,18 +113,26 @@ div .col{
     flex-direction: column;
 }
 #gameOverBox button, h2{
-    font-size: 3vw;
+    font-size: 40px;
 }
 
 #gameOverPointsBox{
-    max-width: 600px;
+    width: 600px;
 }
 
 #gameOverPointsBox p{
-    font-size: 2vw;
+    font-size: 35px;
+}
+
+.gameOverScore{
+    font-size: 50px!important;
 }
 
 /* Colors */
+
+.red{
+    color: #eb2225!important;
+}
 
 .red-bg{
     background-color: #eb2225!important;
@@ -151,5 +159,11 @@ div .col{
 @media(max-width: 600px){
     .plusAndLessDiv{
         width: 100%!important;
+    }
+    #gameOverPointsBox{
+        max-width: 340px!important;
+    }
+    #gameOverPointsBox p, button{
+        font-size: 25px!important;
     }
 }
