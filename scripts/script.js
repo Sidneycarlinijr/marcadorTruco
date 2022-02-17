@@ -1,4 +1,6 @@
 var clicks = 0;
+var resultsSection = document.getElementById("gameOver");
+
 
 function getTarget(target){
     //Escala os niveis de hierarquia
@@ -48,8 +50,6 @@ function truco(){
             clicks=0;
             break;
     }
-
-    console.log(buttons)
 }
 
 function add(element){
@@ -87,7 +87,7 @@ function add(element){
     }
 
     if(target.innerHTML > 11){
-        resetGame();
+        gameResults();
     }
 }
 
@@ -100,8 +100,15 @@ function remove(element){
     }
 }
 
-function resetGame(){
-    console.log("reseta!")
+function gameResults(){
+    resultsSection.classList.remove("d-none");
+}
+
+function playAgain(){
+    resultsSection.classList.add("d-none");
+
+
+
 }
 
 function switchTrucoPoints(pointsQuantity){

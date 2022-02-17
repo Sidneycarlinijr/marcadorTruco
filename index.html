@@ -15,7 +15,7 @@
     <header>
         
     </header>
-    <section id="center-box" class="container d-none">
+    <section id="center-box" class="container">
         <div class="row h-100">
             <div id="player1" class="col red-bg me-md-2">
                 <div class="mt-2">
@@ -76,7 +76,7 @@
             </div>
         </div>
     </section>
-    <section id="gameOver">
+    <section id="gameOver" class="d-none">
         <div id="gameOverBox" class="white d-flex flex-column justify-content-center align-items-center">
             <h2 class="red">Fim da partida!</h2>
             <div id="gameOverPointsBox">
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <button style="border: none!important;" class="btn mt-5 red-bg white">Jogar novamente</button>
+            <button onClick="playAgain()" style="border: none!important;" class="btn mt-5 red-bg white">Jogar novamente</button>
         </div>
     </section>
 
