@@ -86,6 +86,7 @@ function add(element){
             break;
     }
 
+    //Chamada quando o game encerra
     if(target.innerHTML > 11){
         gameResults();
     }
@@ -102,13 +103,17 @@ function remove(element){
 
 function gameResults(){
     resultsSection.classList.remove("d-none");
+
+    team1Result.innerHTML = team1Points.innerHTML;
+    team2Result.innerHTML = team2Points.innerHTML;
+    
 }
 
 function playAgain(){
+    team1Points.innerHTML = "0";
+    team2Points.innerHTML = "0";
+
     resultsSection.classList.add("d-none");
-
-
-
 }
 
 function switchTrucoPoints(pointsQuantity){
