@@ -105,7 +105,12 @@ function gameResults(){
     resultsSection.classList.remove("d-none");
 
     team1Result.innerHTML = team1Points.innerHTML;
+    team1Name.innerHTML = inputNameTeam1.value
+
     team2Result.innerHTML = team2Points.innerHTML;
+    team2Name.innerHTML = inputNameTeam2.value;
+
+    console.log(inputNameOne.value);
     
 }
 
