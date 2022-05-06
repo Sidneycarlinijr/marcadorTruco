@@ -21,7 +21,7 @@ textarea{
 @font-face {
     font-family: Delight;
     src: local(Delight Candles), url(../styles/Delight\ Candles\ .ttf);
- }
+}
 
 div .col{
     padding: 0;
@@ -44,12 +44,6 @@ div .col{
     background-size: cover;
     background-repeat: repeat;
     overflow: hidden;
-}
-#player1{
-    /* background-image: url(../images/baralho-espanhol-nipes.jpg); */
-}
-#player2{
-    /* background-image: url(../images/baralho-espanhol-nipes-invertido.jpg); */
 }
 
 .teamName{
@@ -165,5 +159,14 @@ div .col{
     }
     #gameOverPointsBox p, button{
         font-size: 25px!important;
+    }
+    .trucoPoints{
+        font-size: 75px!important;
+    }
+}
+
+@media(max-width: 450px){
+    .trucoPoints{
+        font-size: 65px!important;
     }
 }
