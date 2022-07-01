@@ -1,1 +1,1 @@
-[Marcador de Truco](marcadordetruco.com.br)
+[Marcador de Truco](https://www.marcadordetruco.com.br)
