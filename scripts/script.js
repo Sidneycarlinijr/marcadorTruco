@@ -38,13 +38,13 @@ function truco(){
             break;
 
         case 4:
-            trucoBox.innerHTML = "É truco papudo!"
+            trucoBox.innerHTML = "TRUCO!"
             pointsQuantity = "+12"
             switchTrucoPoints(pointsQuantity)
             break;
 
         default:
-            trucoBox.innerHTML = "É truco papudo!"
+            trucoBox.innerHTML = "TRUCO!"
             pointsQuantity = "reset";
             switchTrucoPoints(pointsQuantity)
             clicks=0;

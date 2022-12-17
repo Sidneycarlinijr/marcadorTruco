@@ -16,9 +16,16 @@
     </header>
     <section id="center-box" class="container">
         <div class="row h-100">
-            <div id="player1" class="col red-bg me-md-2">
-                <div class="mt-2">
-                    <textarea wrap="hard" maxlength="18" class="form-control text-center teamName white" id="inputNameTeam1" name="teamTwo" cols="1" rows="2">Time 1</textarea>
+            <div id="player1" class="col red-bg ms-md-2" style="display: flex; flex-direction: column;">
+                <div style="align-self: center;" class="teamNameBox">
+                    <textarea
+                        wrap="hard" 
+                        maxlength="18" 
+                        class="teamName white" 
+                        id="inputNameTeam1" 
+                        name="teamTwo" 
+                        >Time 1
+                    </textarea>
                 </div>
                 <div class="text-center teamPoints white">
                     <h1 id="team1Points">0</h1>
@@ -39,9 +46,16 @@
                     </div>
                 </div>
             </div>
-            <div id="player2" class="col red-bg ms-md-2">
-                <div class="mt-2">
-                    <textarea wrap="hard" maxlength="18" class="form-control text-center teamName white" id="inputNameTeam2" name="teamTwo" cols="1" rows="2">Time 2</textarea>
+            <div id="player2" class="col red-bg ms-md-2" style="display: flex; flex-direction: column;">
+                <div style="align-self: center;" class="teamNameBox">
+                    <textarea 
+                        wrap="hard" 
+                        maxlength="18" 
+                        class="teamName white" 
+                        id="inputNameTeam2" 
+                        name="teamTwo" 
+                        >Time 2
+                    </textarea>
                 </div>
                 <div class="text-center teamPoints white">
                     <h1 id="team2Points">0</h1>
@@ -63,15 +77,15 @@
                 </div>
             </div>
         </div>
-        <div id="trucoButton" class="row justify-content-center align-items-center white-bg d-red" onClick="truco()">
+        <div id="trucoButton" class="row justify-content-center align-items-center" style="color: white" onClick="truco()">
             <div class="col-1">
-                <img src="./images/paus.png" alt="" style="width: 25px;"class="float-start">
+                <img src="./images/paus.png" alt="" style="width: 25px;" class="float-start">
             </div>
             <div class="col-10">
-                <h1 id="trucoButtonText" class="text-center">É truco papudo!</h1>
+                <h1 id="trucoButtonText" class="text-center">TRUCO!</h1>
             </div>
             <div class="col-1">
-                <img src="./images/paus.png" alt="" style="width: 25px;"class="float-end">
+                <img src="./images/paus.png" alt="" style="width: 25px;" class="float-end">
             </div>
         </div>
     </section>
