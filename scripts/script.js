@@ -143,3 +143,15 @@ function switchTrucoPoints(pointsQuantity){
         }
     }
 }
+
+const requestWakeLock = async () => {
+    if ('wakeLock' in navigator) {
+        try {
+            await navigator.wakeLock.request('screen');
+        } catch (err) {
+            console.log(`${err.name}, ${err.message}`);
+        }
+    } 
+}
+  
+  requestWakeLock();
