@@ -61,7 +61,7 @@ div .col{
 }
 
 .teamNameBox{
-    background-color: rgba(225, 53, 66, 0.85);
+    background-color: rgba(225, 53, 66, 1);
     width: 80%;
     height: 5rem;
     border-radius: 0 0 10px 10px;
@@ -148,7 +148,7 @@ div .col{
 }
 
 .red-bg{
-    background-color: rgba(245, 50, 64, 0.85);
+    background-color: rgba(245, 50, 64, 1);
 }
 
 .white{
